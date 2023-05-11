@@ -73,7 +73,7 @@ public class Orders_Page_Test extends Base_Configuration{
 	@Test(priority = 2, dependsOnMethods = "Login")
 	public void Dashboard_Heading() throws InterruptedException {
 		extent_test=extent_report.startTest("Dashboard_Heading Functionality");
-		extent_test.log(LogStatus.INFO, "Dashboard page test initiated");
+		extent_test.log(LogStatus.INFO, "Dashboard page test initiated***");
 		extent_test.log(LogStatus.INFO, "Dashboard page test runs successfully");
 		String s1 = product_page_ui.Dashboard_Heading().getText();
 		if(s1.equals(prop.getProperty("dashboard_heading"))) {
