@@ -63,6 +63,7 @@ public class Orders_Page_Test extends Base_Configuration{
 		extent_test.log(LogStatus.INFO, "Login page test initiated");
 		extent_test.log(LogStatus.INFO, "Login page test runs successfully");
 		String s1 = driver.getCurrentUrl();
+		System.out.println("Noor Change in git");
 		if(s1.equals(prop.getProperty("admin_url"))) {
 			extent_test.log(LogStatus.PASS, "Login Successfully");
 		}else {
