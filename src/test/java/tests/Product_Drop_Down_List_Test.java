@@ -38,8 +38,8 @@ public class Product_Drop_Down_List_Test extends Base_Configuration {
 		login_page_test.valid_login();
 		
 		
-		//File directory = new File(product_page_actions.download_file_location);
-		//FileUtils.cleanDirectory(directory);
+		File directory = new File(product_page_actions.download_file_location);
+		FileUtils.cleanDirectory(directory);
 	}
 	@BeforeTest
 	public void report_path() {
@@ -162,33 +162,33 @@ public class Product_Drop_Down_List_Test extends Base_Configuration {
 	
 	// from 08-05-2023////
 	
-//	@Test(priority = 8, dependsOnMethods = "Catalog_Icon_Click_and_Product_Page")
-//	public void Catalog_PDF_Download() throws InterruptedException {
-//		extent_test=extent_report.startTest("Catalog PDF download Functionality");
-//		extent_test.log(LogStatus.INFO, "Catalog PDF download test started");
-//		extent_test.log(LogStatus.INFO, "Catalog PDF download test runs successfully");
-//		product_page_actions.download_catalog_as_pdf();
-//		if(product_page_actions.download_file_name.equals("pdfcatalog.pdf")) {
-//			extent_test.log(LogStatus.PASS, "Catalog PDF downloaded successfully");
-//		}else {
-//			extent_test.log(LogStatus.FAIL, "Catalog PDF is not downloaded successfully");
-//		}
-//		Assert.assertTrue(product_page_actions.download_file_name.equals("pdfcatalog.pdf"), "Downloaded file name is not matching with expected file name");
-//	}
-//	
-//	@Test(priority = 9, dependsOnMethods = "Catalog_Icon_Click_and_Product_Page")
-//	public void Export_button() throws InterruptedException {
-//		extent_test=extent_report.startTest("Export button Functionality");
-//		extent_test.log(LogStatus.INFO, "Export button test initiated");
-//		extent_test.log(LogStatus.INFO, "Export button test runs successfully");
-//		product_page_actions.export_button();
-//		if(product_page_actions.download_file_name2.equals("products.xlsx")) {
-//			extent_test.log(LogStatus.PASS, "Export button excel file downloaded successfully");
-//		}else {
-//			extent_test.log(LogStatus.FAIL, "Export button excel file is not downloaded successfully");
-//		}
-//		Assert.assertTrue(product_page_actions.download_file_name2.equals("products.xlsx"), "Downloaded file name is not matching with expected file name");
-//	}
+	@Test(priority = 8, dependsOnMethods = "Catalog_Icon_Click_and_Product_Page")
+	public void Catalog_PDF_Download() throws InterruptedException {
+		extent_test=extent_report.startTest("Catalog PDF download Functionality");
+		extent_test.log(LogStatus.INFO, "Catalog PDF download test started");
+		extent_test.log(LogStatus.INFO, "Catalog PDF download test runs successfully");
+		product_page_actions.download_catalog_as_pdf();
+		if(product_page_actions.download_file_name.equals("pdfcatalog.pdf")) {
+			extent_test.log(LogStatus.PASS, "Catalog PDF downloaded successfully");
+		}else {
+			extent_test.log(LogStatus.FAIL, "Catalog PDF is not downloaded successfully");
+		}
+		Assert.assertTrue(product_page_actions.download_file_name.equals("pdfcatalog.pdf"), "Downloaded file name is not matching with expected file name");
+	}
+	
+	@Test(priority = 9, dependsOnMethods = "Catalog_Icon_Click_and_Product_Page")
+	public void Export_button() throws InterruptedException {
+		extent_test=extent_report.startTest("Export button Functionality");
+		extent_test.log(LogStatus.INFO, "Export button test initiated");
+		extent_test.log(LogStatus.INFO, "Export button test runs successfully");
+		product_page_actions.export_button();
+		if(product_page_actions.download_file_name2.equals("products.xlsx")) {
+			extent_test.log(LogStatus.PASS, "Export button excel file downloaded successfully");
+		}else {
+			extent_test.log(LogStatus.FAIL, "Export button excel file is not downloaded successfully");
+		}
+		Assert.assertTrue(product_page_actions.download_file_name2.equals("products.xlsx"), "Downloaded file name is not matching with expected file name");
+	}
 	@Test(priority = 10, dependsOnMethods = "Add_New_Product_Button")
 	public void Delete_Button() throws InterruptedException {
 		extent_test=extent_report.startTest("Delete button Functionality");

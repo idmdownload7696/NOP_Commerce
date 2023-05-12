@@ -19,7 +19,7 @@ public class Product_Page_Actions extends Product_Page_UI{
 
 	public final String download_file_name2 = "products.xlsx";
 	public final String download_file_name = "pdfcatalog.pdf";
-//	public final String download_file_location = "./Downloads";
+	public final String download_file_location = "/Downloads";
 
 
 	public void Catalog_Button() {
