@@ -3,17 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Orders_Page_Test">
+      <class name="tests.Product_Drop_Down_List_Test">
         <methods>
+          <include name="Add_New_Product_Button"/>
           <include name="report_path"/>
           <include name="Login"/>
-          <include name="Date_Selection_and_Product_Search"/>
-          <include name="Dashboard_Heading"/>
-          <include name="setup1"/>
-          <include name="Sales_Icon_Click_and_Order_Page"/>
           <include name="reportend"/>
+          <include name="setup1"/>
+          <include name="Dashboard_Heading"/>
+          <include name="Delete_Button"/>
+          <include name="Product_updated_successfully"/>
+          <include name="Log_Out"/>
+          <include name="Export_button"/>
+          <include name="Product_Search_and_Select_Checkbox"/>
+          <include name="Catalog_Icon_Click_and_Product_Page"/>
+          <include name="Catalog_PDF_Download"/>
+          <include name="Product_image_upload"/>
         </methods>
-      </class> <!-- tests.Orders_Page_Test -->
+      </class> <!-- tests.Product_Drop_Down_List_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
