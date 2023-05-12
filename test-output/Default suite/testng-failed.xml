@@ -8,8 +8,9 @@
           <include name="report_path"/>
           <include name="Login"/>
           <include name="Date_Selection_and_Product_Search"/>
-          <include name="Sales_Icon_Click_and_Order_Page"/>
+          <include name="Dashboard_Heading"/>
           <include name="setup1"/>
+          <include name="Sales_Icon_Click_and_Order_Page"/>
           <include name="reportend"/>
         </methods>
       </class> <!-- tests.Orders_Page_Test -->

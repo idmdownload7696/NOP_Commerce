@@ -21,7 +21,8 @@ public class Base_Configuration {
 		public static void browser() throws InterruptedException  {
 
 			try {
-				FileInputStream fs = new FileInputStream("D:\\workspace\\NOP_Commerce\\configuration.properties");
+				FileInputStream fs = new FileInputStream("./configuration.properties");
+				//FileInputStream fs = new FileInputStream("D:\\workspace\\NOP_Commerce\\configuration.properties");
 				prop = new Properties();
 				prop.load(fs);
 				WebDriverManager.chromedriver().setup();
